@@ -83,7 +83,7 @@ addElement.addEventListener('click',() =>{
                     block.classList.toggle("new-block")
                 }
             })
-            imgGray.addEventListener('click',()=>{
+            imgGray.addEventListener('touchstart',()=>{
                 mainBlock.remove();
                 if(block.innerHTML==""){
                     block.classList.toggle("dis-none");
@@ -145,12 +145,12 @@ zABlack.addEventListener('click',() =>{
 })
 
 
-aZGray.addEventListener('click',() =>{
+aZGray.addEventListener('touchstart',() =>{
     sortBlocks("A-Z");
     aZGray.classList.toggle('dis-none');
     zAGray.classList.toggle('dis-none');
 })
-zAGray.addEventListener('click',() =>{
+zAGray.addEventListener('touchstart',() =>{
     sortBlocks("Z-A");
     zAGray.classList.toggle('dis-none');
     aZGray.classList.toggle("dis-none")
