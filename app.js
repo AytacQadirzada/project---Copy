@@ -26,7 +26,7 @@ clearPurple.addEventListener('click',() =>{
     addInput.value="";
 })
 
-clearGray.addEventListener('click',() =>{
+clearGray.addEventListener('touchstart',() =>{
     addInput.value="";
 })
 
