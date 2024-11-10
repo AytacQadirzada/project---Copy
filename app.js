@@ -25,9 +25,11 @@ let addInput=document.querySelector("input");
 clearPurple.addEventListener('click',() =>{
     addInput.value="";
 })
+
 clearGray.addEventListener('click',() =>{
     addInput.value="";
 })
+
 let block= document.querySelector(".block");
 let count=1;
 let listNumber=1;
@@ -88,6 +90,7 @@ addElement.addEventListener('click',() =>{
                     block.classList.toggle("new-block")
                 }
             })
+
             
         }
     }
@@ -141,15 +144,14 @@ zABlack.addEventListener('click',() =>{
     aZGray.classList.toggle("dis-none")
 })
 
-zAGray.addEventListener('click',() =>{
-    sortBlocks("Z-A");
-
-    zAGray.classList.toggle('dis-none');
-    aZGray.classList.toggle("dis-none")
-})
 
 aZGray.addEventListener('click',() =>{
     sortBlocks("A-Z");
     aZGray.classList.toggle('dis-none');
     zAGray.classList.toggle('dis-none');
+})
+zAGray.addEventListener('click',() =>{
+    sortBlocks("Z-A");
+    zAGray.classList.toggle('dis-none');
+    aZGray.classList.toggle("dis-none")
 })
